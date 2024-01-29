@@ -119,7 +119,7 @@ footer{
 }
 
 #title h1{
-	font-family: "finger";
+	font-family: "yanone";
 	font-size: 60px;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 5px;
@@ -296,4 +296,67 @@ form input[disabled]{
 .project a{
 	text-decoration: none;
 	color: black;
+}
+
+/* Skills section */
+.skills {
+	max-width: 68.75rem;
+	margin: auto;
+	text-align: center;
+	margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+	margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+	padding: 1.25rem;
+  }
+  
+  .icon {
+	width: 11.875rem;
+	height: 11.25rem;
+  }
+  /* Skills section ends */
+
+  /* Estilo adicional para contenedor de ícono y nombre */
+.icon-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem; 
+}
+
+.icon-card {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s ease;
+}
+
+/* Alinea los iconos en columnas */
+.set {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los iconos se envuelvan a la siguiente línea */
+    justify-content: center;
+}
+
+/* Estilo adicional para resaltar el efecto visual al hacer hover */
+.icon-card:hover {
+    transform: scale(0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo adicional para el nombre del icono */
+.icon-name {
+    position: absolute;
+    top: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Cuando el cursor está sobre el contenedor del ícono, muestra el nombre */
+.icon-container:hover .icon-name {
+    opacity: 1;
 }

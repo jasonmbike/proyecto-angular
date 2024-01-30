@@ -12,6 +12,7 @@ import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { SkillComponent } from './components/skill/skill.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SkillComponent } from './components/skill/skill.component';
     CreateComponent,
     ContactComponent,
     ErrorComponent,
-    SkillComponent
+    SkillComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { EditComponent } from './components/edit/edit.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { DetailComponent } from './components/detail/detail.component';
     ContactComponent,
     ErrorComponent,
     SkillComponent,
-    DetailComponent
+    DetailComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,

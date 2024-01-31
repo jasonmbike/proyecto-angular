@@ -222,10 +222,11 @@ form input[type="submit"],
 
 .button-edit,
 .button-delete{
-	width: 20%;
+	width: 30%;
 	float: left;
 	margin-right: 10px;
 	text-decoration: none;
+	text-align: center;
 }
 
 .button-edit{
@@ -380,4 +381,11 @@ form input[disabled]{
 /* Cuando el cursor está sobre el contenedor del ícono, muestra el nombre */
 .icon-container:hover .icon-name {
     opacity: 1;
+}
+
+
+.confirm {
+	display: block;
+	font-weight: bold;
+	margin-top: 20px;
 }

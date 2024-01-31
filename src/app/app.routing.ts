@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { SkillComponent } from "./components/skill/skill.component";
 import { DetailComponent } from "./components/detail/detail.component";
+import { EditComponent } from "./components/edit/edit.component";
 
 
 const appRoutes: Routes = [
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     {path: 'contacto', component: ContactComponent},
     {path: 'skills', component: SkillComponent},
     {path: 'proyecto/:id', component: DetailComponent},
+    {path: 'editar-proyecto/:id', component: EditComponent},
     {path: '**', component: ErrorComponent}
 ];
 

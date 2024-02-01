@@ -31,24 +31,6 @@ export class CreateComponent {
     this.url = global.url
   }
 
-  ngOnInit(){
-  	this._route.params.subscribe(params => {
-  		let id = params['id'];
-
-  		this.getProject(id);
-  	});
-  }
-
-  getProject(id:any){
-  	this._projectService.getProject(id).subscribe(
-  		response => {
-  			this.project = response.project;
-  		},
-  		error => {
-  			console.log(<any>error);
-  		}
-  	)
-  }
 
   onSubmit(form: any) {
     // Guardar los datos del formulario

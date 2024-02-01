@@ -50,17 +50,19 @@ export class DetailComponent implements OnInit {
     this.confirm = confirm;
   }
 
-   deleteProject(id:any){
-  	this._projectService.deleteProject(id).subscribe(
-  		response => {
-  			if(response.project){
-  				this._router.navigate(['/proyectos']);
-  			}
-  		},
-  		error => {
-  			console.log(<any>error);
-  		}
-  	);
+  deleteProject(id: any) {
+    this._projectService.deleteProject(id).subscribe(
+      response => {
+        if (response.project) {
+          setTimeout(() => {
+            this._router.navigate(['/proyectos']);
+          }, 1000); // Redirige después de un segundo
+        }
+      },
+      error => {
+        console.log(<any>error);
+      }
+    );
   }
 
 }
